@@ -1,0 +1,125 @@
+﻿<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>_zhanrmdhnn</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=EB+Garamond:wght@400;500&display=swap");
+
+    :root {
+      --night: #050505;
+      --abyss: #10100d;
+      --gold: #b99b57;
+      --gold-bright: #e3c98a;
+      --bone: #efe7d0;
+      --mist: #c3b99f;
+      --panel: rgba(8, 8, 8, 0.86);
+      --line: rgba(185, 155, 87, 0.5);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: "EB Garamond", Georgia, serif;
+      color: var(--bone);
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      background:
+        radial-gradient(circle at 20% 10%, rgba(227, 201, 138, 0.14), transparent 45%),
+        radial-gradient(circle at 80% 85%, rgba(185, 155, 87, 0.12), transparent 42%),
+        linear-gradient(160deg, var(--night), var(--abyss));
+    }
+
+    .card {
+      width: 100%;
+      max-width: 430px;
+      padding: 34px 24px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: linear-gradient(180deg, rgba(20, 19, 15, 0.94), var(--panel));
+      box-shadow: 0 0 26px rgba(185, 155, 87, 0.15), 0 24px 50px rgba(0, 0, 0, 0.7);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(130deg, rgba(227, 201, 138, 0.08), transparent 32%, transparent 66%, rgba(227, 201, 138, 0.08));
+      pointer-events: none;
+    }
+
+    h1 {
+      font-family: "Cinzel", Georgia, serif;
+      font-size: clamp(1.8rem, 4vw, 2.3rem);
+      letter-spacing: 0.08em;
+      color: var(--gold-bright);
+      text-transform: uppercase;
+      text-shadow: 0 0 10px rgba(185, 155, 87, 0.55);
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: var(--mist);
+      font-size: 1.06rem;
+      margin-bottom: 26px;
+    }
+
+    .links {
+      display: grid;
+      gap: 12px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .link-btn {
+      display: block;
+      text-decoration: none;
+      font-family: "Cinzel", Georgia, serif;
+      color: var(--bone);
+      letter-spacing: 0.05em;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: linear-gradient(180deg, rgba(20, 18, 13, 0.95), rgba(10, 10, 10, 0.95));
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+    }
+
+    .link-btn:hover {
+      transform: translateY(-2px);
+      color: var(--gold-bright);
+      border-color: rgba(227, 201, 138, 0.88);
+      box-shadow: 0 0 14px rgba(185, 155, 87, 0.35);
+    }
+
+    .sigil {
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: rgba(227, 201, 138, 0.75);
+      letter-spacing: 0.08em;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>Site of Grace</h1>
+    <p>Social Account</p>
+    <div class="links">
+      <a class="link-btn" href="https://www.tiktok.com/@akhsanr_?_r=1&_t=ZS-94BicQQzXhh" target="_blank" rel="noopener noreferrer">TikTok</a>
+      <a class="link-btn" href="https://www.instagram.com/_zhanrmdhnn?igsh=MWxtdmY4MzlnY3RsYQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a class="link-btn" href="https://wa.me/" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      <a class="link-btn" href="https://youtube.com/@ryuu9451?si=TTckBZ8yAYXfvZqH" target="_blank" rel="noopener noreferrer">YouTube</a>
+    </div>
+    <p class="sigil">Plin Plin Plon</p>
+  </main>
+</body>
+</html>
